@@ -2,6 +2,8 @@
   import * as THREE from 'three';
   import { onMount } from 'svelte';
 
+  export const prerender = true; // Add this line
+
   let container;
   let camera, scene, renderer;
   let cube;
