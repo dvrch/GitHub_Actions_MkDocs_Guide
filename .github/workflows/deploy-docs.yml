@@ -21,5 +21,9 @@ jobs:
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
-      - run: pip install -r requirements.txt 
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install -r requirements.txt
+      - name: Verify pymdown-extensions installation
+        run: pip show pymdown-extensions
       - run: mkdocs gh-deploy --force
