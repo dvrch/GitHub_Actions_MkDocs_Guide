@@ -30,6 +30,8 @@ jobs:
       - name: Build Svelte project
         run: npm run build
         working-directory: ./svelte-3d-viewer
+      - name: Create docs/svelte-3d-viewer directory
+        run: mkdir -p ./docs/svelte-3d-viewer
       - name: Copy Svelte build to docs
         run: cp -r ./svelte-3d-viewer/build/* ./docs/svelte-3d-viewer/
 
