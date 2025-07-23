@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://dvrch.github.io/GitHub_Actions_MkDocs_Guide/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>https://dvrch.github.io/GitHub_Actions_MkDocs_Guide/advanced_topics/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>https://dvrch.github.io/GitHub_Actions_MkDocs_Guide/common_issues_and_solutions/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>https://dvrch.github.io/GitHub_Actions_MkDocs_Guide/github_actions_basics/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>https://dvrch.github.io/GitHub_Actions_MkDocs_Guide/mkdocs_setup/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>https://dvrch.github.io/GitHub_Actions_MkDocs_Guide/summary/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>https://dvrch.github.io/GitHub_Actions_MkDocs_Guide/svelte_3d_integration/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+</urlset>
