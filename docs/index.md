@@ -19,8 +19,8 @@ Voici un exemple de modèle 3D interactif intégré directement dans cette page 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 <model-viewer
-  src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"  <!-- Exemple de modèle GLB libre -->
-  alt="Un astronaute en 3D"
+  src="./assets/models/spaceship.glb"  <!-- Votre modèle GLB local -->
+  alt="Un vaisseau spatial en 3D"
   ar
   ar-modes="webxr scene-viewer quick-look"
   shadow-intensity="1"
