@@ -12,4 +12,10 @@ Que vous soyez un développeur débutant ou expérimenté, ce guide vous accompa
 *   **Résolution de problèmes courants :** Erreurs 404, problèmes de navigation, et autres défis rencontrés.
 *   **Astuces avancées :** Améliorer votre workflow de documentation.
 
+## Exemple de Composant Svelte Intégré
+
+Voici un exemple de composant Svelte qui affiche un cube 3D interactif, intégré directement dans cette page de documentation. Cela démontre comment vous pouvez ajouter des fonctionnalités interactives complexes à votre site MkDocs.
+
+<iframe src="/GitHub_Actions_MkDocs_Guide/svelte-3d-viewer/" width="100%" height="400px" style="border:none;"></iframe>
+
 Prêt à transformer votre processus de documentation ? Commençons !
