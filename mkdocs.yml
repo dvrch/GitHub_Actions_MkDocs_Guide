@@ -28,11 +28,14 @@ theme:
     logo: material/book-open-variant
 
 nav:
-  - Accueil: index.md
-  - Comprendre GitHub Actions: github_actions_basics.md
-  - 'MkDocs: Configuration de Base': mkdocs_setup.md
-  - Problèmes Courants et Solutions: common_issues_and_solutions.md
-  - Sujets Avancés: advanced_topics.md
+  - Résumé: summary.md
+  - Guide de Déploiement:
+    - Accueil: index.md
+    - Comprendre GitHub Actions: github_actions_basics.md
+    - MkDocs: Configuration de Base: mkdocs_setup.md
+    - Problèmes Courants et Solutions: common_issues_and_solutions.md
+    - Sujets Avancés: advanced_topics.md
+  - Intégration Svelte 3D: svelte_3d_integration.md
 
 markdown_extensions:
   - admonition
@@ -41,11 +44,10 @@ markdown_extensions:
   - pymdownx.tabbed: {alternate_style: true}
   - attr_list
   - md_in_html
-  # - pymdownx.wikilinks # Pour les liens de type [[wikilink]]
+  - pymdownx.wikilinks
 
 plugins:
   - search
-  - ezlinks
 
 docs_dir: docs
 site_dir: site
