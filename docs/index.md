@@ -12,10 +12,25 @@ Que vous soyez un développeur débutant ou expérimenté, ce guide vous accompa
 *   **Résolution de problèmes courants :** Erreurs 404, problèmes de navigation, et autres défis rencontrés.
 *   **Astuces avancées :** Améliorer votre workflow de documentation.
 
-## Exemple de Composant Svelte Intégré
+## Exemple de Modèle 3D Interactif
 
-Voici un exemple de composant Svelte qui affiche un cube 3D interactif, intégré directement dans cette page de documentation. Cela démontre comment vous pouvez ajouter des fonctionnalités interactives complexes à votre site MkDocs.
+Voici un exemple de modèle 3D interactif intégré directement dans cette page de documentation. Cela démontre comment vous pouvez ajouter des fonctionnalités interactives complexes à votre site MkDocs en utilisant la balise `<model-viewer>`.
 
-<iframe src="/GitHub_Actions_MkDocs_Guide/svelte-3d-viewer/" width="100%" height="400px" style="border:none;"></iframe>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<model-viewer
+  src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"  <!-- Exemple de modèle GLB libre -->
+  alt="Un astronaute en 3D"
+  ar
+  ar-modes="webxr scene-viewer quick-look"
+  shadow-intensity="1"
+  camera-controls
+  touch-action="pan-y"
+  auto-rotate
+  autoplay
+  style="width: 100%; height: 400px;"
+></model-viewer>
+
+Vous pouvez interagir avec le modèle ci-dessus : le faire pivoter, zoomer, etc.
 
 Prêt à transformer votre processus de documentation ? Commençons !
