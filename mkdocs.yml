@@ -41,10 +41,11 @@ markdown_extensions:
   - pymdownx.tabbed: {alternate_style: true}
   - attr_list
   - md_in_html
-  - pymdownx.wikilinks # Pour les liens de type [[wikilink]]
+  # - pymdownx.wikilinks # Pour les liens de type [[wikilink]]
 
 plugins:
   - search
+  - ezlinks
 
 docs_dir: docs
 site_dir: site

@@ -1,2 +1,2 @@
 mkdocs-material
-pymdown-extensions
+mkdocs-ezlinks-plugin
