@@ -41,7 +41,10 @@ markdown_extensions:
   - pymdownx.tabbed: {alternate_style: true}
   - attr_list
   - md_in_html
-  - pymdownx.wikilinks # Pour les liens de type [[wikilink]]
+  - pymdownx.magiclink:
+      wikilinks:
+        base_url: /
+        end_url: /
 
 plugins:
   - search
