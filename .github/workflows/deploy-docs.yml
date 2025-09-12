@@ -19,10 +19,8 @@ jobs:
           python-version: 3.x
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: List installed packages
-        run: pip freeze
-      - name: Try to import wikilinks
-        run: python -c "import pymdownx.wikilinks"
+      - name: Inspect pymdown-extensions installation
+        run: pip show -f pymdown-extensions
       - name: Build MkDocs site
         run: mkdocs build
       - name: Deploy to GitHub Pages
