@@ -21,6 +21,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: List installed packages
         run: pip freeze
+      - name: Try to import wikilinks
+        run: python -c "import pymdownx.wikilinks"
       - name: Build MkDocs site
         run: mkdocs build
       - name: Deploy to GitHub Pages
