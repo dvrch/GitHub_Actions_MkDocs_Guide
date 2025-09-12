@@ -42,9 +42,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.magiclink:
-      wikilinks:
-        base_url: /
-        end_url: /
+      provider_options:
+        wiki:
+          base_url: /
+          end_url: /
 
 plugins:
   - search
