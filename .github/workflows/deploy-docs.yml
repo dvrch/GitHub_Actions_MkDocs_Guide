@@ -3,7 +3,7 @@ name: Deploy Docs
 on:
   push:
     branches:
-      - main
+      - dv-cv-mkdocx
 
 permissions:
   contents: write
