@@ -21,6 +21,10 @@
     scene = new THREE.Scene();
     scene.add(new THREE.AmbientLight(0xffffff, 0.5));
 
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight.position.set(1, 1, 1).normalize();
+    scene.add(directionalLight);
+
     const loader = new GLTFLoader();
     loader.load(
       '/models/spaceship.glb', // Path relative to the static directory
