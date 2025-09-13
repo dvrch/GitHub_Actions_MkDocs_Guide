@@ -1,4 +1,4 @@
-# Sujets Avancés
+# Sujets Avancés (new)
 
 Maintenant que les bases sont couvertes, explorons quelques sujets avancés qui peuvent enrichir votre documentation et votre workflow.
 
