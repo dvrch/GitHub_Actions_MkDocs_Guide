@@ -1,16 +1,17 @@
 <script>
   import * as THREE from 'three';
   import { onMount } from 'svelte';
-
-  
+  import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+  import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
   let container;
-  let camera, scene, renderer;
-  let cube;
+  let camera, scene, renderer, controls;
+  let spaceship;
 
   onMount(() => {
     init();
     animate();
+    console.log('Svelte page mounted. Controls initialized:', controls);
   });
 
   function init() {
@@ -18,16 +19,31 @@
     camera.position.z = 1;
 
     scene = new THREE.Scene();
+    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
 
-    const geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
-    const material = new THREE.MeshNormalMaterial();
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight.position.set(1, 1, 1).normalize();
+    scene.add(directionalLight);
 
-    cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+    const loader = new GLTFLoader();
+    loader.load(
+      '/models/spaceship.glb', // Path relative to the static directory
+      function (gltf) {
+        spaceship = gltf.scene;
+        scene.add(spaceship);
+      },
+      undefined,
+      function (error) {
+        console.error(error);
+      }
+    );
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     container.appendChild(renderer.domElement);
+
+    controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
 
     window.addEventListener('resize', onWindowResize);
   }
@@ -39,11 +55,14 @@
   }
 
   function animate() {
+    console.log('Animation loop running.');
     requestAnimationFrame(animate);
 
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.02;
-
+    if (spaceship) {
+      spaceship.rotation.y += 0.005;
+    }
+    
+    controls.update();
     renderer.render(scene, camera);
   }
 </script>

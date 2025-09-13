@@ -34,7 +34,6 @@ nav:
   - Problèmes Courants et Solutions: common_issues_and_solutions.md
   - Sujets Avancés: advanced_topics.md
   - 'Intégration 3D Svelte': svelte_3d_integration.md
-  - 'Vaisseau Spatial': spaceship.md
 
 markdown_extensions:
   - admonition
