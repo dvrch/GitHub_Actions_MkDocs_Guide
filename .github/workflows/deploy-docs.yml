@@ -30,10 +30,14 @@ jobs:
       - name: Build Svelte project
         run: npm run build
         working-directory: ./svelte-3d-viewer
+      - name: List Svelte build directory
+        run: ls -F svelte-3d-viewer/build
       - name: Create docs/svelte-3d-viewer directory
         run: mkdir -p ./docs/svelte-3d-viewer
       - name: Copy Svelte build to docs
         run: cp -r ./svelte-3d-viewer/build/* ./docs/svelte-3d-viewer/
+      - name: List docs/svelte-3d-viewer directory
+        run: ls -F docs/svelte-3d-viewer/
       
       - name: Build MkDocs site
         run: mkdocs build
