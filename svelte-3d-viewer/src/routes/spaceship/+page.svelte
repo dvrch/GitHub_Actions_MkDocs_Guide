@@ -11,6 +11,7 @@
   onMount(() => {
     init();
     animate();
+    console.log('Svelte page mounted. Controls initialized:', controls);
   });
 
   function init() {
@@ -50,6 +51,7 @@
   }
 
   function animate() {
+    console.log('Animation loop running.');
     requestAnimationFrame(animate);
 
     if (spaceship) {
